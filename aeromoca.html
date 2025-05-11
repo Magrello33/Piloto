@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curso de Aeromoça | Academia Emerson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #002244;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p, ul {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .botao {
+      display: inline-block;
+      margin: 20px 10px 0 0;
+      padding: 12px 20px;
+      background-color: #0044cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form {
+      margin-top: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form label {
+      font-weight: bold;
+    }
+
+    form button {
+      background-color: #0044cc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Curso de Aeromoça</h1>
+    <p>Capacitação completa para sua carreira nas alturas</p>
+  </header>
+
+  <div class="container">
+    <h2>Sobre o Curso</h2>
+    <p>Formação essencial para atuar com excelência no atendimento e segurança dos passageiros a bordo das aeronaves comerciais.</p>
+
+    <h2>Conteúdo Programático</h2>
+    <ul>
+      <li>Etiqueta e comportamento</li>
+      <li>Segurança de voo</li>
+      <li>Primeiros socorros</li>
+      <li>Simulações de atendimento</li>
+    </ul>
+
+    <h2>Duração</h2>
+    <p>De 3 a 6 meses</p>
+
+    <h2>Valor do Curso</h2>
+    <p>R$1.100 com entrada de R$600 na matrícula e o restante parcelado em até 12x</p>
+
+    <h2>Inscreva-se</h2>
+    <form action="https://formsubmit.co/alunospilotos@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://nubank.com.br/cobrar/cd2bm/6820b478-c1f2-49cf-b511-c44078aeb0bd">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="Nome" required>
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="CPF" required>
+
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" id="nascimento" name="Data de Nascimento" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="Telefone" placeholder="(DDD) 90000-0000" required>
+
+      <label for="pagamento">Forma de Pagamento:</label>
+      <select id="pagamento" name="Forma de Pagamento" required>
+        <option value="">Selecione</option>
+        <option value="Pix">Pix</option>
+        <option value="Cartão de Crédito">Cartão de Crédito</option>
+        <option value="Boleto">Boleto</option>
+      </select>
+
+      <button type="submit">Enviar e Prosseguir para o Pagamento</button>
+    </form>
+
+    <a href="index.html" class="botao">Voltar para Página Inicial</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Academia de Aviação Brasileira Emerson - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>

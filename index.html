@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academia de Aviação Brasileira Emerson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-escuro: #002244;
+      --azul: #0044cc;
+      --cinza: #f4f4f4;
+      --cinza-claro: #e0e0e0;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--cinza);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--azul-escuro);
+      color: var(--branco);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--azul-escuro);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .cursos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .curso {
+      background-color: var(--branco);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .curso:hover {
+      transform: translateY(-5px);
+    }
+
+    .botao-curso {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: var(--azul);
+      color: var(--branco);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .botao-curso:hover {
+      background-color: #0033aa;
+    }
+
+    .depoimentos {
+      background-color: var(--cinza-claro);
+      padding: 40px 30px;
+      margin-top: 50px;
+      border-radius: 15px;
+    }
+
+    .depoimento {
+      margin-bottom: 30px;
+    }
+
+    .depoimento strong {
+      display: block;
+      margin-top: 10px;
+      color: var(--azul-escuro);
+    }
+
+    footer {
+      background-color: var(--azul-escuro);
+      color: var(--branco);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .curso {
+        padding: 20px;
+      }
+
+      .botao-curso {
+        font-size: 1rem;
+      }
+    }
+
+    .texto-centralizado {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Academia de Aviação Brasileira Emerson</h1>
+    <p>Instituição reconhecida pela ANAC com excelência em formação aérea.</p>
+  </header>
+
+  <img src="Banner.png" alt="Banner da Aviação" class="banner" />
+
+  <div class="container">
+
+    <section class="sobre-nos">
+      <h2 class="texto-centralizado">Sobre Nós</h2>
+      <p class="texto-centralizado">
+        Com mais de uma década de experiência, formamos profissionais altamente capacitados para o setor aéreo.
+        Nosso compromisso é transformar sua paixão pela aviação em uma carreira de sucesso.
+      </p>
+    </section>
+
+    <section class="formato-aulas">
+      <h2 class="texto-centralizado">Formato das Aulas</h2>
+      <p class="texto-centralizado">
+        Nossos cursos são oferecidos tanto no formato <strong>online</strong> quanto <strong>presencial</strong>,
+        proporcionando flexibilidade total para você estudar no seu ritmo.
+      </p>
+      <p class="texto-centralizado">
+        Além disso, os alunos matriculados terão acesso exclusivo ao nosso <strong>Aplicativo Oficial da Academia</strong>,
+        com conteúdos complementares, avisos, videoaulas, simulados e muito mais para auxiliar na sua formação.
+      </p>
+    </section>
+
+    <h2 style="margin-top: 50px;">Cursos Disponíveis</h2>
+    <div class="cursos">
+      <div class="curso">
+        <h3>Piloto Privado</h3>
+        <p>Formação teórica e prática para quem sonha em comandar aeronaves.</p>
+        <a href="piloto-privado.html" class="botao-curso">Saiba Mais</a>
+      </div>
+
+      <div class="curso">
+        <h3>Piloto Comercial</h3>
+        <p>Curso avançado para quem deseja seguir carreira profissional na aviação.</p>
+        <a href="comercial.html" class="botao-curso">Saiba Mais</a>
+      </div>
+
+      <div class="curso">
+        <h3>Mecânico de Aeronaves</h3>
+        <p>Formação técnica para manutenção e inspeção de aeronaves.</p>
+        <a href="mecanico.html" class="botao-curso">Saiba Mais</a>
+      </div>
+
+      <div class="curso">
+        <h3>Curso de Aeromoça</h3>
+        <p>Capacitação especializada para mulheres que desejam atuar como comissárias de voo.</p>
+        <a href="aeromoca.html" class="botao-curso">Saiba Mais</a>
+      </div>
+
+      <div class="curso">
+        <h3>Curso de Comissário de Bordo</h3>
+        <p>Preparação completa para homens que desejam atuar como comissários de voo.</p>
+        <a href="comissario de bordo.html" class="botao-curso">Saiba Mais</a>
+      </div>
+    </div>
+
+    <div class="depoimentos">
+      <h2>Depoimentos</h2>
+      <div class="depoimento">
+        <p>"Realizei o sonho de ser piloto! A equipe é incrível e super atenciosa."</p>
+        <strong>- Carlos Souza</strong>
+      </div>
+      <div class="depoimento">
+        <p>"Me formei como comissária com toda a preparação que precisava. Recomendo muito!"</p>
+        <strong>- Juliana Lima</strong>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2018 Academia de Aviação Brasileira Emerson - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>

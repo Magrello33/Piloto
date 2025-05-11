@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curso de Piloto Comercial | Academia Emerson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }header {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #002244;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p, ul {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.botao {
+  display: inline-block;
+  margin: 15px 10px 0 0;
+  padding: 12px 20px;
+  background-color: #0044cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: none;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form button {
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#linkPagamento {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#mensagem {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Curso de Piloto Comercial</h1>
+    <p>Avance na carreira e torne-se um piloto profissional</p>
+  </header>  <div class="container">
+    <h2>Sobre o Curso</h2>
+    <p>Curso completo para quem deseja atuar como piloto profissional em companhias aéreas ou aviação executiva. Inclui disciplinas avançadas e prática intensiva de voo.</p><h2>Você vai aprender:</h2>
+<ul>
+  <li>Procedimentos IFR e VFR</li>
+  <li>Planejamento de voo</li>
+  <li>Regulamentos da aviação comercial</li>
+  <li>Performance de aeronaves</li>
+</ul>
+
+<h2>Pré-requisitos</h2>
+<p>Certificado de Piloto Privado, exame médico aeronáutico válido.</p>
+
+<h2>Duração</h2>
+<p>De 6 a 12 meses, dependendo da carga horária semanal.</p>
+
+<h2>Valor do curso</h2>
+<p>R$6.300 à vista (promoção válida até fim de maio) ou parcelado no cartão em até 12x.</p>
+
+<button class="botao" onclick="document.getElementById('formulario').style.display='block'">Inscreva-se</button>
+<a href="index.html" class="botao">Voltar para a Página Inicial</a>
+
+<form id="formulario" action="https://formsubmit.co/alunospilotos@gmail.com" method="POST">
+  <h2>Formulário de Inscrição</h2>
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="cpf">CPF:</label>
+  <input type="text" id="cpf" name="cpf" required>
+
+  <label for="nascimento">Data de Nascimento:</label>
+  <input type="date" id="nascimento" name="nascimento" required>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="telefone">Telefone:</label>
+  <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 90000-0000" required>
+
+  <label for="pagamento">Forma de Pagamento:</label>
+  <select id="pagamento" name="pagamento" required onchange="mostrarLinkPagamento()">
+    <option value="">Selecione</option>
+    <option value="pix">PIX</option>
+    <option value="cartao">Cartão de Crédito</option>
+    <option value="boleto">Boleto Bancário</option>
+  </select>
+
+  <input type="hidden" name="_next" value="https://nubank.com.br/cobrar/cd2bm/6820b478-c1f2-49cf-b511-c44078aeb0bd">
+
+  <button type="submit">Enviar Inscrição</button>
+</form>
+
+<div id="mensagem">
+  <strong>Inscrição enviada com sucesso!</strong><br>
+  Você será redirecionado para o pagamento. Envie o comprovante para o WhatsApp (11) 91234-5678.
+</div>
+
+  </div>  <footer>
+    &copy; 2025 Academia de Aviação Brasileira Emerson - Todos os direitos reservados
+  </footer>  <script>
+    function mostrarLinkPagamento() {
+      // Não precisa mais mostrar link, já que redireciona automaticamente
+    }
+  </script></body>
+</html>
