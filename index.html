@@ -126,6 +126,11 @@
       margin-top: 50px;
     }
 
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
@@ -144,6 +149,44 @@
       text-align: center;
       max-width: 900px;
       margin: 0 auto 30px auto;
+    }
+
+    .formulario {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      margin-top: 50px;
+      border-radius: 15px;
+    }
+
+    .formulario form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: var(--azul-escuro);
+    }
+
+    .formulario form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .formulario form button {
+      background-color: var(--azul);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .formulario form button:hover {
+      background-color: #0033aa;
     }
   </style>
 </head>
@@ -211,6 +254,27 @@
       </div>
     </div>
 
+    <!-- Formulário de Contato -->
+    <section class="formulario">
+      <h2 class="texto-centralizado">Fale Conosco</h2>
+      <form action="https://formsubmit.co/escoladeaviacaobrasileira@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://escoladepilotos.com.br/obrigado.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required pattern="[\d\s()+-]{8,20}" placeholder="(xx) xxxx-xxxx">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Depoimentos -->
     <div class="depoimentos">
       <h2>Depoimentos</h2>
       <div class="depoimento">
@@ -220,15 +284,22 @@
       <div class="depoimento">
         <p>"Me formei como comissária com toda a preparação que precisava. Recomendo muito!"</p>
         <strong>- Juliana Lima</strong>
-      </div class="depoimento">
-      <h2>Depoimento</h2>
-      <p>"Melhor escola super indico,o app deles facilita muito o estudo,os professores mega atencioso,to gostando muito</p>
-      <strong>- Karina Medeiros</strong>
+      </div>
+      <div class="depoimento">
+        <p>"Melhor escola, super indico, o app deles facilita muito o estudo, os professores mega atenciosos. Tô gostando muito!"</p>
+        <strong>- Karina Medeiros</strong>
+      </div>
+      <div class="depoimento">
+        <p>"Curso de altíssimo nível! Aprendi muito e já estou trabalhando na área, graças a essa academia."</p>
+        <strong>- Rafael Oliveira</strong>
+      </div>
     </div>
   </div>
 
   <footer>
-    &copy; 2018 Academia de Aviação Brasileira Emerson - Todos os direitos reservados
+    <p>&copy; 2018 Academia de Aviação Brasileira Emerson - Todos os direitos reservados</p>
+    <p>Contato: <a href="mailto:escoladeaviacaobrasileira@gmail.com">escoladeaviacaobrasileira@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5511920572618" target="_blank">+55 11 92057-2618</a></p>
   </footer>
 
 </body>
