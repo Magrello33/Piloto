@@ -100,6 +100,39 @@
       background-color: #0033aa;
     }
 
+    .formulario {
+      background-color: var(--branco);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 50px;
+    }
+
+    .formulario form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .formulario input, .formulario button {
+      padding: 12px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .formulario button {
+      background-color: var(--azul);
+      color: var(--branco);
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .formulario button:hover {
+      background-color: #0033aa;
+    }
+
     .depoimentos {
       background-color: var(--cinza-claro);
       padding: 40px 30px;
@@ -150,44 +183,6 @@
       max-width: 900px;
       margin: 0 auto 30px auto;
     }
-
-    .formulario {
-      background-color: #ffffff;
-      padding: 40px 30px;
-      margin-top: 50px;
-      border-radius: 15px;
-    }
-
-    .formulario form label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: 600;
-      color: var(--azul-escuro);
-    }
-
-    .formulario form input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    .formulario form button {
-      background-color: var(--azul);
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .formulario form button:hover {
-      background-color: #0033aa;
-    }
   </style>
 </head>
 <body>
@@ -228,25 +223,21 @@
         <p>Formação teórica e prática para quem sonha em comandar aeronaves.</p>
         <a href="piloto-privado.html" class="botao-curso">Saiba Mais</a>
       </div>
-
       <div class="curso">
         <h3>Piloto Comercial</h3>
         <p>Curso avançado para quem deseja seguir carreira profissional na aviação.</p>
         <a href="comercial.html" class="botao-curso">Saiba Mais</a>
       </div>
-
       <div class="curso">
         <h3>Mecânico de Aeronaves</h3>
         <p>Formação técnica para manutenção e inspeção de aeronaves.</p>
         <a href="mecanico.html" class="botao-curso">Saiba Mais</a>
       </div>
-
       <div class="curso">
         <h3>Curso de Aeromoça</h3>
         <p>Capacitação especializada para mulheres que desejam atuar como comissárias de voo.</p>
         <a href="aeromoca.html" class="botao-curso">Saiba Mais</a>
       </div>
-
       <div class="curso">
         <h3>Curso de Comissário de Bordo</h3>
         <p>Preparação completa para homens que desejam atuar como comissários de voo.</p>
@@ -254,22 +245,14 @@
       </div>
     </div>
 
-    <!-- Formulário de Contato -->
+    <!-- Formulário -->
     <section class="formulario">
-      <h2 class="texto-centralizado">Fale Conosco</h2>
+      <h2 class="texto-centralizado">Inscreva-se Agora</h2>
       <form action="https://formsubmit.co/alunospilotos@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="https://escoladepilotos.site/obrigado.html">
         <input type="hidden" name="_captcha" value="false">
-
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required pattern="[\d\s()+-]{8,20}" placeholder="(xx) xxxx-xxxx">
-
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="tel" name="telefone" placeholder="Seu telefone" required>
         <button type="submit">Enviar</button>
       </form>
     </section>
@@ -286,14 +269,15 @@
         <strong>- Juliana Lima</strong>
       </div>
       <div class="depoimento">
-        <p>"Melhor escola, super indico, o app deles facilita muito o estudo, os professores mega atenciosos. Tô gostando muito!"</p>
+        <p>"Melhor escola super indico, o app deles facilita muito o estudo, os professores mega atenciosos. Tô gostando muito!"</p>
         <strong>- Karina Medeiros</strong>
       </div>
       <div class="depoimento">
-        <p>"Curso de altíssimo nível! Aprendi muito e já estou trabalhando na área, graças a essa academia."</p>
-        <strong>- Rafael Oliveira</strong>
+        <p>"A metodologia é diferenciada e os materiais são atualizados. Estou muito satisfeito com o curso!"</p>
+        <strong>- Rafael Silva</strong>
       </div>
     </div>
+
   </div>
 
   <footer>
